@@ -13,17 +13,46 @@
     <link rel="shortcut icon" href="./4geeks.ico" />
   </head>
   <body>
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
-      </div>
+    <h1>Carta aleatoria:</h1>
+
+    <div id="naipeGenerado" class="card"></div>
+
+    <button id="btnNaipe">Generar Carta</button>
+
+    <div id="temporizador" class="temporizador">
+      <button id="btnIniciar">Iniciar temporizador</button>
+      <button id="btnParar">Parar</button>
+      <span>(mirar en consola)</span>
     </div>
+
+    <div id="tamano">
+      <p>
+        Altura:
+        <input
+          type="number"
+          value="500"
+          min="200"
+          max="700"
+          id="altura"
+          name="altura"
+        />
+        px
+      </p>
+      <p>
+        Ancho:
+        <input
+          type="number"
+          value="250"
+          min="150"
+          max="500"
+          id="ancho"
+          name="ancho"
+        />
+        px
+      </p>
+      <p><button id="btnTamano">Cambiar</button></p>
+    </div>
+
+    <script type="module" src="./app.js"></script>
   </body>
 </html>
